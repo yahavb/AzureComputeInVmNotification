@@ -1,8 +1,6 @@
-# AzureComputeInVmNotification
-In-VM metadata service for pulling dynamic VM info e.g. Vnet status, future planned reboots etc
+In-VM metadata service for pulling dynamic VM info e.g. virtual network status, future planned reboots etc
 
-“What just happened to my VM?” - In-VM Metadata Service
--------------------------------------------------------
+##“What just happened to my VM?” - In-VM Metadata Service
 
 ### Introduction ####
 
