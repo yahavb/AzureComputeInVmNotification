@@ -3,7 +3,7 @@
 # Add the following line to your local crontab. It will execute the script every 5 minutes 
 # */5 * * * * /home/user/IsVmInMaint.sh
 #!/bin/bash
-result=`curl http://169.254.169.254/metadata/v1/InstanceInfo| grep -i ud`
+result=`curl http://169.254.169.254/metadata/v1/maintenance | grep -i EventID`
 if [ -n $result ]; then
- `logger Incoming VM reboot`
+ `logger Incoming VM Event`
 fi
