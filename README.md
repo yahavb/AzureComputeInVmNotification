@@ -32,10 +32,13 @@ The in-vm metadata service allows a standard method to pull the maintenance stat
 The standard results set will include three main attributes, InstanceID, [placement upgrade-domains and placement fault-domains](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-manage-availability/). In case of on-going maintenance activity is about to begin (within 5 minutes) an additional maintenance-event will be added.
 
 Normal Results - 
-``` {“ID":"myInstanceVM1","UD":"0","FD":"0"} ```
+``` {} ```
 
 Results when your VM in about to reboot -
-``` {“ID”:”myInstanceVM1","UD":"0","FD":"0","Reboot"} ```
+``` {
+  "EventID": "6f0a13a3-dc0d-4bbe-ab24-df710a3917e6",
+  "EventCreationTime": "9\/15\/2015 6:42:51 AM"
+} ```
 
 ## Why Should I Use it? ###
 The service is easy use and available on any OS you choose to run. It will allow a pulling-based mechanism from the VM itself so the Devops team who operates the service can get a near-time status of their VMs. Such indications can help you masking availability issues from your end users and increase the service availability. e.g. basic availability logging or This post will focus on two scenarios one can use the in-vm-metadata service:
