@@ -27,7 +27,7 @@ In this post we present the In-VM Metadata service. The service is based on [IET
 
 ## How Should I Use It? ###
 The in-vm metadata service allows a standard method to pull the maintenance status of that VM by executing the command:
-```curl http://169.254.169.254/metadata/v1/InstanceInfo```
+```curl http://169.254.169.254/metadata/v1/maintenance```
 
 The standard results set will include three main attributes, InstanceID, [placement upgrade-domains and placement fault-domains](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-manage-availability/). In case of on-going maintenance activity is about to begin (within 5 minutes) an additional maintenance-event will be added.
 
