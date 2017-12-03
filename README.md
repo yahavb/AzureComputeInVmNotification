@@ -79,7 +79,7 @@ Validating an endpoints  - [Get-AzureEndpoint](https://msdn.microsoft.com/librar
 
 Removing an endpoint from a load balancer pool - [Remove-AzureEndpoint](https://msdn.microsoft.com/library/azure/dn495161)
 
-##How Does it Work###
+##How Does it Works###
 The instance metadata server is http server that returns data from a host agent (the node) that receive commands from the main controller component (Fig. 3). 
 
 ![](https://github.com/yahavb/AzureComputeInVmNotification/blob/master/misc/arch.png)
